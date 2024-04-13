@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /*-------- COLORS-------- */
+  /* textcolor */
+  --LOGO-COLOR: #a00;
+  --TEXT-COLOR: #fff;
+
+  /* BACKGROUND COLOR */
+  --NAV-BG-COLOR: white;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+img {
+  display: block;
+}
+nav {
+  outline: 2px solid var(--LOGO-COLOR);
+  font-size: 1.3rem;
+  background-color: var(--NAV-BG-COLOR);
+}
+
+/* BRAND LOGO */
+.navbar-brand {
+  color: var(--LOGO-COLOR);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-left: 50px;
+}
+
+#first-nav {
+  text-align: center;
+}
+
+main {
+  padding: 100px;
+}
+
+main section {
+  height: 100vh;
+  outline: 2px solid green;
+  padding: 20px;
+}
+
+/* First section and its children */
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+}
+
+.signup-btn {
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  background-color: var(--LOGO-COLOR);
+  color: var(--TEXT-COLOR);
+}
+
+/* SECOND SECTION AND ITS CHILDREN */
+
+.main__section2 {
+  text-align: center;
+}
+
+.child h4,
+span i {
+  text-align: center;
+}
+
+.child {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  outline: 2px solid blue;
+}
+
+.child span {
+  display: inline-block;
+  outline: 1px solid blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+/* FOOTER STYLES */
+
+footer {
+  outline: 2px solid yellow;
+}
+.footer__item {
+  display: flex;
+  justify-content: space-around;
+  outline: 2px solid red;
+}
+
+.footer__item h5 {
+  display: inline-block;
+  width: 40%;
+}
+
+.footer__item span {
+  width: 40%;
+  outline: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* LARGER SCREENS */
+@media screen and (min-width: 1024px) {
+  nav {
+    height: 100px;
+  }
+
+  #navmenu {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #last-nav {
+    margin-right: 50px;
+  }
+
+  /* First section*/
+
+  .main__section1 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section1__div1 {
+    width: 45%;
+  }
+
+  .section1__div2 {
+    width: 45%;
+    outline: 2px solid black;
+  }
+
+  /* SECTION 2 */
+  .section2-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .child {
+    width: 30%;
+    outline: 2px solid red;
+  }
+}
