@@ -10,6 +10,7 @@
   --LOGO-COLOR: #a00;
   --TEXT-COLOR: #fff;
   --ICON-COLOR: gold;
+  --FOOTER-TEXT-COLOR: black;
   /* BACKGROUND COLOR */
   --NAV-BG-COLOR: white;
   --FOOTER-BG-COLOR: #e0c1c1;
@@ -36,6 +37,18 @@ nav {
   font-size: 1.5rem;
   font-weight: 800;
   margin-left: 50px;
+}
+
+/* START FREE BUTTON */
+#start-free-btn {
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: var(--LOGO-COLOR);
+}
+
+#signup {
+  color: white;
 }
 
 #first-nav {
@@ -115,6 +128,13 @@ span i {
   align-items: center;
   margin: 0 auto;
 }
+/* LAST SECTION SIGNUP FORM */
+.signup-form {
+  text-align: center;
+  outline: 2px solid magenta;
+  margin-top: 20px;
+  padding: 10px;
+}
 
 /* ++++++++++  All section styles  ++++++++*/
 
@@ -129,11 +149,13 @@ span i {
 .review i {
   color: var(--ICON-COLOR);
 }
+
 /* FOOTER STYLES */
 
 footer {
   outline: 2px solid yellow;
   background-color: var(--FOOTER-BG-COLOR);
+  padding: 10px;
 }
 
 .footer__item h5 {
@@ -161,7 +183,7 @@ footer {
 
 footer section:last-of-type {
   text-align: center;
-  padding: 10;
+  outline: 2px solid grey;
 }
 /* HOVERING QUESTION MARK */
 
@@ -256,7 +278,9 @@ footer section:last-of-type {
     outline: 2px solid blue;
     padding: 10px;
   }
+}
 
+@media screen and (min-width: 1280px) {
   /* FOOTER AND IT'S CHILDREN*/
   .footer__item {
     display: flex;
@@ -286,9 +310,10 @@ footer section:last-of-type {
   .footer__item__ul li {
     margin: 0 20px;
     list-style: none;
+    font-size: clamp(0.8rem, 0.9rem, 1rem);
   }
-}
 
-/* STYLES FOR MEDIUM SCREENS */
-@media screen and (min-width: 768px) {
+  .footer__item__ul li a {
+    color: var(--FOOTER-TEXT-COLOR);
+  }
 }
