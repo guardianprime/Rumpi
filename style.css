@@ -14,6 +14,7 @@
   /* BACKGROUND COLOR */
   --NAV-BG-COLOR: white;
   --FOOTER-BG-COLOR: #e0c1c1;
+  --NAV-HOVER-BG-COLOR: #dbcdcd;
 }
 
 body {
@@ -26,7 +27,6 @@ img {
 }
 
 nav {
-  outline: 2px solid var(--LOGO-COLOR);
   font-size: 1.3rem;
   background-color: var(--NAV-BG-COLOR);
 }
@@ -42,7 +42,7 @@ nav {
 /* START FREE BUTTON */
 #start-free-btn {
   height: 50px;
-  border-radius: 10px;
+  border-radius: 20px;
   font-size: 1.2rem;
   background-color: var(--LOGO-COLOR);
 }
@@ -128,6 +128,19 @@ span i {
   align-items: center;
   margin: 0 auto;
 }
+
+/* THIRD SECTION */
+.main__section3 {
+  height: 100vh;
+}
+.advert {
+  text-align: center;
+}
+
+.advert h3 {
+  font-size: 2rem;
+}
+
 /* LAST SECTION SIGNUP FORM */
 .signup-form {
   text-align: center;
@@ -214,19 +227,36 @@ footer section:last-of-type {
 /* LARGER SCREENS */
 @media screen and (min-width: 1024px) {
   nav {
-    height: 100px;
+    height: 80px;
   }
 
   #navmenu {
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
+  }
+
+  #first-nav li,
+  #last-nav .first-item {
+    border-radius: 50px;
+    padding: 2px 8px;
   }
 
   #last-nav {
     margin-right: 50px;
   }
 
+  #start-free-btn {
+    border-radius: 50px;
+    width: 160px;
+  }
+  /* active, hover and focus effect for nav links */
+  .nav-item:hover,
+  .nav-item:focus,
+  #last-nav .first-item:hover,
+  #last-nav .first-item:focus {
+    background-color: var(--NAV-HOVER-BG-COLOR);
+  }
   main section {
     height: 100vh;
   }
