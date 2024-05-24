@@ -45,6 +45,7 @@ nav {
   border-radius: 20px;
   font-size: 1.2rem;
   background-color: var(--LOGO-COLOR);
+  border: none;
 }
 
 #signup {
@@ -56,19 +57,18 @@ nav {
 }
 
 main {
-  padding: 100px;
+  padding: 25px;
 }
 
 main section {
   height: 130vh;
-  outline: 2px solid green;
   padding: 20px;
 }
 
 /* First section and its children */
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -76,19 +76,21 @@ h3 {
 }
 
 .signup-btn {
-  width: 300px;
+  width: 70%;
   height: 50px;
-  border-radius: 20px;
+  border-radius: 50px;
   font-size: 1.2rem;
   background-color: var(--LOGO-COLOR);
   color: var(--TEXT-COLOR);
+  border: none;
+  margin-left: 30px;
 }
 
 /* SECOND SECTION AND ITS CHILDREN */
 
 .main__section2 {
   text-align: center;
-  height: 160vh;
+  height: max-content;
 }
 
 .main__section2 h1 {
@@ -112,14 +114,12 @@ span i {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  outline: 2px solid blue;
   width: 80%;
   height: 10%;
 }
 
 .child span {
   display: inline-block;
-  outline: 1px solid blue;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -131,7 +131,7 @@ span i {
 
 /* THIRD SECTION */
 .main__section3 {
-  height: 100vh;
+  height: max-content;
 }
 .advert {
   text-align: center;
@@ -142,17 +142,39 @@ span i {
 }
 
 /* LAST SECTION SIGNUP FORM */
+.main__section6 {
+  height: max-content;
+}
 .signup-form {
   text-align: center;
-  outline: 2px solid magenta;
-  margin-top: 20px;
+  color: white;
+  margin: 20px auto;
+  background-color: var(--LOGO-COLOR);
+  padding: 30px;
+  border-radius: 10px;
+  height: 60vh;
+  width: 80vw;
+}
+
+.signup-form h2 {
+  font-weight: 600;
+}
+
+.signup-form p {
+  font-size: 1.3rem;
+}
+/* To make 2nd the btn smaller in size and responsive */
+
+#signup-form__btn {
+  width: 70%;
+  background-color: rgb(236, 94, 94);
+  font-size: 1.3rem;
   padding: 10px;
 }
 
 /* ++++++++++  All section styles  ++++++++*/
 
 .review {
-  outline: 2px solid pink;
   margin-top: 50px;
   text-align: center;
   height: 20%;
@@ -163,10 +185,12 @@ span i {
   color: var(--ICON-COLOR);
 }
 
+section {
+  margin-top: 10px;
+}
 /* FOOTER STYLES */
 
 footer {
-  outline: 2px solid yellow;
   background-color: var(--FOOTER-BG-COLOR);
   padding: 10px;
 }
@@ -179,12 +203,10 @@ footer {
 .footer__item {
   display: flex;
   justify-content: space-around;
-  outline: 2px solid red;
 }
 
 .footer__item span {
   width: 40%;
-  outline: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +218,6 @@ footer {
 
 footer section:last-of-type {
   text-align: center;
-  outline: 2px solid grey;
 }
 /* HOVERING QUESTION MARK */
 
@@ -257,6 +278,11 @@ footer section:last-of-type {
   #last-nav .first-item:focus {
     background-color: var(--NAV-HOVER-BG-COLOR);
   }
+
+  main {
+    padding: 100px;
+  }
+
   main section {
     height: 100vh;
   }
@@ -275,7 +301,6 @@ footer section:last-of-type {
 
   .section1__div2 {
     width: 45%;
-    outline: 2px solid black;
   }
 
   /* SECTION 2 */
@@ -292,10 +317,26 @@ footer section:last-of-type {
 
   .child {
     width: 30%;
-    outline: 2px solid red;
+  }
+
+  /* SECTION 6 */
+
+  .signup-form {
+    margin-top: 20px;
+    padding: 30px;
+    height: 40vh;
+  }
+
+  #signup-form__btn {
+    width: 30%;
+    padding: 10px;
   }
 
   /*  general section styles */
+
+  h1 {
+    font-size: 3rem;
+  }
 
   .hero-wrapper {
     display: flex;
@@ -305,11 +346,11 @@ footer section:last-of-type {
   .intro,
   .media {
     width: 45%;
-    outline: 2px solid blue;
     padding: 10px;
   }
 }
 
+/* EXTRA LARGE SCREEN */
 @media screen and (min-width: 1280px) {
   /* FOOTER AND IT'S CHILDREN*/
   .footer__item {
@@ -322,7 +363,6 @@ footer section:last-of-type {
 
   .footer__item h5 {
     width: 10%;
-    outline: 2px solid brown;
   }
 
   .footer__item span {
@@ -334,7 +374,6 @@ footer section:last-of-type {
     display: flex;
     justify-content: flex-start;
     width: 85%;
-    outline: 2px solid green;
   }
 
   .footer__item__ul li {
