@@ -1,0 +1,1 @@
+This is a regular landing page with some Javascript interactions
