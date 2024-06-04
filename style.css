@@ -1,20 +1,41 @@
+/* ____RESET_____ */
+
 * {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
 }
 
+input,
+button,
+textarea,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+}
+/* ______________ */
+
 :root {
   /*-------- COLORS-------- */
   /* textcolor */
   --LOGO-COLOR: #a00;
   --TEXT-COLOR: #fff;
-  --ICON-COLOR: gold;
+  --ICON-REVIEW-COLOR: gold;
+  --ICON-BTN-COLOR: #a08d86;
   --FOOTER-TEXT-COLOR: black;
   /* BACKGROUND COLOR */
   --NAV-BG-COLOR: white;
   --FOOTER-BG-COLOR: #e0c1c1;
   --NAV-HOVER-BG-COLOR: #dbcdcd;
+  --ICON-BTN-BG-COLOR: #f5efeb;
+
+  /* ====== FONT SIZE ========== */
+  --FONT-SIZE-XL: calc(32px + 18 * ((100vw - 421px) / 859));
 }
 
 body {
@@ -73,6 +94,14 @@ h1 {
 
 h3 {
   font-size: 0.9rem;
+}
+
+.section1__div1 h1 {
+  font-family: tiempos, Georgia, Cambria, Palatino, "Times New Roman", Times,
+    serif;
+  font-weight: 600;
+  line-height: 1.32;
+  font-size: var(--FONT-SIZE-XL);
 }
 
 .signup-btn {
@@ -172,6 +201,15 @@ span i {
   padding: 10px;
 }
 
+/* STYLES FOR THE ICONS */
+.child span {
+  background-color: var(--ICON-BTN-BG-COLOR);
+}
+.child span > .fa-solid {
+  color: var(--ICON-BTN-COLOR);
+}
+/* -icons-icons-icons- */
+
 /* ++++++++++  All section styles  ++++++++*/
 
 .review {
@@ -182,7 +220,7 @@ span i {
 }
 
 .review i {
-  color: var(--ICON-COLOR);
+  color: var(--ICON-REVIEW-COLOR);
 }
 
 section {
@@ -293,6 +331,7 @@ footer section:last-of-type {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+    height: max-content;
   }
 
   .section1__div1 {
@@ -301,6 +340,12 @@ footer section:last-of-type {
 
   .section1__div2 {
     width: 45%;
+  }
+
+  .section1-img {
+    width: 100%;
+    border-radius: 20px;
+    height: 60%;
   }
 
   /* SECTION 2 */
