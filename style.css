@@ -104,6 +104,28 @@ h3 {
   font-size: var(--FONT-SIZE-XL);
 }
 
+.main__section1 {
+  outline: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  height: max-content;
+}
+
+.main__section1 figure {
+  outline: 2px dotted orange;
+  padding: 20px;
+  background: linear-gradient(#e1e1e1, #ea2dbe);
+  border-radius: 20px;
+}
+
+.section1-img {
+  width: 80%;
+  border-radius: 20px;
+  height: auto;
+  margin: 20px auto;
+}
+
 .signup-btn {
   width: 70%;
   height: 50px;
@@ -120,6 +142,7 @@ h3 {
 .main__section2 {
   text-align: center;
   height: max-content;
+  outline: 2px solid yellow;
 }
 
 .main__section2 h1 {
@@ -174,6 +197,7 @@ span i {
 .main__section6 {
   height: max-content;
 }
+
 .signup-form {
   text-align: center;
   color: white;
@@ -181,7 +205,7 @@ span i {
   background-color: var(--LOGO-COLOR);
   padding: 30px;
   border-radius: 10px;
-  height: 60vh;
+  height: 45vh;
   width: 80vw;
 }
 
@@ -260,16 +284,7 @@ footer section:last-of-type {
 /* HOVERING QUESTION MARK */
 
 .question {
-  position: fixed;
-  bottom: 50px;
-  right: 10px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: var(--LOGO-COLOR);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .question:hover,
@@ -330,22 +345,27 @@ footer section:last-of-type {
   .main__section1 {
     margin-top: 100px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     height: max-content;
   }
 
   .section1__div1 {
-    width: 45%;
+    width: 48%;
+    padding: 10px;
+    outline: 2px solid green;
   }
 
   .section1__div2 {
-    width: 45%;
+    width: 48%;
+    padding: 10px;
+    outline: 2px solid blue;
   }
 
   .section1-img {
     width: 100%;
     border-radius: 20px;
-    height: 60%;
+    height: 600px;
   }
 
   /* SECTION 2 */
@@ -429,5 +449,20 @@ footer section:last-of-type {
 
   .footer__item__ul li a {
     color: var(--FOOTER-TEXT-COLOR);
+  }
+
+  /* QUESTION MARK THINGY  */
+
+  .question {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--LOGO-COLOR);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
