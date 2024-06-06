@@ -28,19 +28,29 @@ h6 {
   --ICON-REVIEW-COLOR: gold;
   --ICON-BTN-COLOR: #a08d86;
   --FOOTER-TEXT-COLOR: black;
+  --LIGHT-TEXT-COLOR: #5f5856;
   /* BACKGROUND COLOR */
   --NAV-BG-COLOR: white;
   --FOOTER-BG-COLOR: #e0c1c1;
   --NAV-HOVER-BG-COLOR: #dbcdcd;
   --ICON-BTN-BG-COLOR: #f5efeb;
+  --BODY-BG-COLOR: #fdfbf9;
 
   /* ====== FONT SIZE ========== */
   --FONT-SIZE-XL: calc(32px + 18 * ((100vw - 421px) / 859));
 }
 
+/*::::::: UTILITIES ::::::*/
+.light {
+  color: var(--LIGHT-TEXT-COLOR);
+}
+/* ::::::::::::::::::::: */
+
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: tiempos, Georgia, Cambria, Palatino, "Times New Roman", Times,
+    serif;
   overflow-x: hidden;
+  background-color: var(--BODY-BG-COLOR);
 }
 
 img {
@@ -147,6 +157,7 @@ h3 {
 
 .main__section2 h1 {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 .section2-container {
@@ -167,7 +178,14 @@ span i {
   justify-content: space-between;
   flex-direction: column;
   width: 80%;
-  height: 10%;
+  height: 20%;
+}
+
+.child h4 {
+  height: max-content;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .child span {
@@ -179,6 +197,10 @@ span i {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+.main__section2 p {
+  color: var(--LIGHT-TEXT-COLOR);
 }
 
 /* THIRD SECTION */
@@ -371,19 +393,27 @@ footer section:last-of-type {
   /* SECTION 2 */
 
   .main__section2 {
-    height: 100vh;
+    height: 73vh;
+    margin: 50px 0;
   }
 
   .section2-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    height: 60%;
   }
 
   .child {
     width: 30%;
+    height: 100%;
   }
 
+  .child h4 {
+    height: 60px;
+    margin: 10px 0;
+    padding: 5px;
+  }
   /* SECTION 6 */
 
   .signup-form {
