@@ -152,7 +152,6 @@ h3 {
 .main__section2 {
   text-align: center;
   height: max-content;
-  outline: 2px solid yellow;
 }
 
 .main__section2 h1 {
@@ -204,9 +203,19 @@ span i {
 }
 
 /* THIRD SECTION */
+.main__section3 h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .main__section3 {
   height: max-content;
 }
+
+.advert p {
+  font-size: 1.5rem;
+}
+
 .advert {
   text-align: center;
 }
@@ -272,6 +281,7 @@ span i {
 section {
   margin-top: 10px;
 }
+
 /* FOOTER STYLES */
 
 footer {
