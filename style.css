@@ -115,7 +115,6 @@ h3 {
 }
 
 .main__section1 {
-  outline: 2px solid black;
   display: flex;
   justify-content: space-between;
   flex-direction: column-reverse;
@@ -123,9 +122,7 @@ h3 {
 }
 
 .main__section1 figure {
-  outline: 2px dotted orange;
   padding: 20px;
-  background: linear-gradient(#e1e1e1, #ea2dbe);
   border-radius: 20px;
 }
 
@@ -144,7 +141,8 @@ h3 {
   background-color: var(--LOGO-COLOR);
   color: var(--TEXT-COLOR);
   border: none;
-  margin-left: 30px;
+  margin: 10px auto;
+  display: block;
 }
 
 /* SECOND SECTION AND ITS CHILDREN */
@@ -282,6 +280,10 @@ section {
   margin-top: 10px;
 }
 
+.learn-link {
+  color: var(--LOGO-COLOR);
+  font-weight: 600;
+}
 /* FOOTER STYLES */
 
 footer {
@@ -310,9 +312,6 @@ footer {
   display: none;
 }
 
-footer section:last-of-type {
-  text-align: center;
-}
 /* HOVERING QUESTION MARK */
 
 .question {
@@ -385,13 +384,11 @@ footer section:last-of-type {
   .section1__div1 {
     width: 48%;
     padding: 10px;
-    outline: 2px solid green;
   }
 
   .section1__div2 {
     width: 48%;
     padding: 10px;
-    outline: 2px solid blue;
   }
 
   .section1-img {
